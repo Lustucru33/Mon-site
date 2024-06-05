@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau des Hiraganas</title>
+    <style>
+        /* CSS général pour la mise en page */
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #fff5e1;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+        }
+        h1 {
+            color: #b30000;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        th {
+            background-color: #ffcccc;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        td {
+            background-color: #ffe6e6;
+        }
+        td:hover {
+            background-color: #ffd1d1;
+        }
+        button {
+            margin-top: 5px;
+            padding: 5px 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff6666;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #e65c5c;
+        }
+        
+        /* Style pour l'en-tête */
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            color: #e60012; /* Rouge traditionnel japonais */
+            border-bottom: 3px solid #e60012;
+        }
+
+        /* Style pour le menu de navigation */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        /* Style pour le contenu principal */
+        main {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        /* Style pour le pied de page */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Media query pour les appareils mobiles */
+        @media (max-width: 600px) {
+            header {
+                font-size: 1.5em;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+
+            main {
+                margin: 10px;
+                padding: 10px;
+            }
+        }
+    </style>
+    <script>
+        function playSound(hiragana) {
+            var audio = new Audio('audio/' + hiragana + '.mp3');
+            audio.play();
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        Bienvenue au Japon
+    </header>
+    <nav>
+        <a href="#home">Hiragana</a>
+        <a href="#about">Katakana</a>
+        <a href="#services">Kanji</a>
+        <a href="#contact">Histoire</a>
+    </nav>
+    <main>
+        <!-- Contenu principal -->
+        <h1>Tableau des Hiraganas</h1>
+        <!-- Votre tableau des Hiraganas ici -->
+    </main>
+    <footer>
+        <!-- Pied de page -->
+        &copy; 2024 Bienvenue au Japon
+    </footer>
+</body>
+</html>
+ 
+        <table>
+            <tr>
+                <th></th>
+                <th>あ (a)</th>
+                <th>い (i)</th>
+                <th>う (u)</th>
+                <th>え (e)</th>
+                <th>お (o)</th>
+            </tr>
+            <tr>
+                <th>あ (a)</th>
+                <td style="color: red;">あ<br><button onclick="playSound('a')">🔊</button></td>
+                <td style="color: red;">い<br><button onclick="playSound('i')">🔊</button></td>
+                <td style="color: red;">う<br><button onclick="playSound('u')">🔊</button></td>
+                <td style="color: red;">え<br><button onclick="playSound('e')">🔊</button></td>
+                <td style="color: red;">お<br><button onclick="playSound('o')">🔊</button></td>
+            </tr>
+            <tr>
+                <th>か (ka)</th>
+                <td style="color: orange;">か<br><button onclick="playSound('ka')">🔊</button></td>
+                <td style="color: orange;">き<br><button onclick="playSound('ki')">🔊</button></td>
+                <td style="color: orange;">く<br><button onclick="playSound('ku')">🔊</button></td>
+                <td style="color: orange;">け<br><button onclick="playSound('ke')">🔊</button></td>
+                <td style="color: orange;">こ<br><button onclick="playSound('ko')">🔊</button></td>
+            </tr>
+            <tr>
+                <th>さ (sa)</th>
+                <td style="color: yellow;">さ<br><button onclick="playSound('sa')">🔊</button></td>
+                <td style="color: yellow;">し<br><button onclick="playSound('shi')">🔊</button></td>
+                <td style="color: yellow;">す<br><button onclick="playSound('su')">🔊</button></td>
+                <td style="color: yellow;">せ<br><button onclick="playSound('se')">🔊</button></td>
+                <td style="color: yellow;">そ<br><button onclick="playSound('so')">🔊</button></td>
+            </tr>
+            <tr>
+                <th>た (ta)</th>
+                <td style="color: green;">た<br><button onclick="playSound('ta')">🔊</button></td>
+                <td style="color: green;">ち<br><button onclick="playSound('chi')">🔊</button></td>
+                <td style="color: green;">つ<br><button onclick="playSound('tsu')">🔊</button></td>
+                <td style="color: green;">て<br><button onclick="playSound('te')">🔊</button></td>
+                <td style="color: green;">と<br><button onclick="playSound('to')">🔊</button></td>
+            </tr>
+            <tr>
+                <th>な (na)</th>
+                <td style="color: blue;">な<br><button onclick="playSound('na')">🔊</button></td>
+                <td style="color: blue;">に<br><button onclick="playSound('ni')">🔊</button></td>
+                <td style="color: blue;">ぬ<br><button onclick="playSound('nu')">🔊</button></td>
+                <td style="color: blue;">ね<br><button onclick="playSound('ne')">🔊</button></td>
+                <td style="color: blue;">の<br><button onclick="playSound('no')">🔊</button></td>
+            </tr>
+            <tr>
+                <th>は (ha)</th>
+                <td style="color: indigo;">は<br><button onclick="playSound('ha')">🔊</button></td>
+                <td style="color: indigo;">ひ<br><button onclick="playSound('hi')">🔊</button></td>
+                <td style="color: indigo;">ふ<br><button onclick="playSound('fu')">🔊</button></td>
+                <td style="color: indigo;">へ<br><button onclick="playSound('he')">🔊</button></td>
+                <td style="color: indigo;">ほ<br><button onclick="playSound('ho')">🔊</button></td>
+            </tr>
+            <tr>
+                <th>ま (ma)</th>
+                <td style="color: violet;">ま<br><button onclick="playSound('ma')">🔊</button></td>
+                <td style="color: violet;">み<br><button onclick="playSound('mi')">🔊</button></td>
+                <td style="color: violet;">む<br><button onclick="playSound('mu')">🔊</button></td>
+                <td style="color: violet;">め<br><button onclick="playSound('me')">🔊</button></td>
+                <td style="color: violet;">も<br><button onclick="playSound('mo')">🔊</button></td>
+            </tr>
+            <tr>
+                <th>や (ya)</th>
+                <td style="color: pink;">や<br><button onclick="playSound('ya')">🔊</button></td>
+                <td>-</td>
+                <td style="color: pink;">ゆ<br><button onclick="playSound('yu')">🔊</button></td>
+                <td>-</td>
+                <td style="color: pink;">よ<br><button onclick="playSound('yo')">🔊</button></td>
+            </tr>
+            <tr>
+                <th>ら (ra)</th>
+                <td style="color: brown;">ら<br><button onclick="playSound('ra')">🔊</button></td>
+                <td style="color: brown;">り<br><button onclick="playSound('ri')">🔊</button></td>
+                <td style="color: brown;">る<br><button onclick="playSound('ru')">🔊</button></td>
+                <td style="color: brown;">れ<br><button onclick="playSound('re')">🔊</button></td>
+                <td style="color: brown;">ろ<br><button onclick="playSound('ro')">🔊</button></td>
+            </tr>
+            <tr>
+                <th>わ (wa)</th>
+                <td style="color: gray;">わ<br><button onclick="playSound('wa')">🔊</button></td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td style="color: gray;">を<br><button onclick="playSound('wo')">🔊</button></td>
+            </tr>
+            <tr
